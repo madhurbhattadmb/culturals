@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+  <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+  <link rel="stylesheet" href="./css/clubstyle2.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+  <link rel='stylesheet ' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./res/clubs/font/flaticon.css">
+  <title>Culturals, IIT Bhilai</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <!--Navigation Bar starts here-->
+  <header id="navbar" class="unhide">
+    <a href="#" class="cult-logo">Culturals</a>
+    <div class="menu-toggle"></div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="javascript:open()">CLUBS</a></li>
+        <li><a href="./fps.html" class="active">SOCIETIES</a></li>
+        <li><a href="./events.html">EVENTS</a></li>
+        <li><a href="./gallery.html">GALLERY</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
+  </header>
+
+  <!--Modal  -->
+  <div id="modal" class="modal-window">
+    <div class="container-fluid modal-window-div">
+      <a href="javascript:close()" title="Close" class="modal-close">Close &times;</a>
+      <div class="modal-div">
+        <ul class="menu-modal">
+
+          <li class="modal-element">
+            <a href="./swara.html"><i class="flaticon-mic">
+              <div class="align-middle">Swara</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./beathackers.html"><i class="flaticon-choreography">
+              <div class="align-middle">Beathackers</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./drishya.html"><i class="flaticon-drama">
+              <div class="align-middle">Drishya</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./quizzotica.html"><i class="flaticon-question">
+              <div class="align-middle">Quizzotica</div>
+            </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./tps.html"><i class="flaticon-photograph">
+              <div class="align-middle">TPS</div>
+            </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./designx.html"><i class="flaticon-design">
+                <div class="align-middle">DesignX</div>
+              </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./renaissance.html"><i class="flaticon-paint">
+              <div class="align-middle">Renaissance</div>
+            </i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!--  End Modal-->
+
+  <div data-component="sidebar">
+    <div class="sidebar">
+      <ul class="list-group flex-column d-inline-block first-menu">
+        <li class="list-group-item pl-3 py-2 ">
+          <a href="./goals.html"><i class="flaticon-book"><span class="ml-2 align-middle">GOALS</span></i></a>
+        </li> <!-- /.list-group-item -->
+
+        <li class="list-group-item pl-3 py-2 active">
+          <a href="./fps.html"><i class="flaticon-photograph"><span class="ml-2 align-middle">Film Production Society</span></i></a>
+        </li> <!-- /.list-group-item -->
+
+        <!-- <li class="list-group-item pl-3 py-2">
+          <a href="./fps.html">
+            <i class="flaticon-drama"><span class="ml-2 align-middle">Film Production Society</span></i>
+          </a>
+        </li>
+      </ul>
+    </div> < /.sidebar -->
+  </div>
+
+  <!--Dropdown club selector for mobile-->
+  <!-- <div class="dropdown">
+    Swara
+    <ul>
+      <a href="#"><li class="active">Swara</li></a>
+      <a href="#"><li>Beathackers</li></a>
+      <a href="#"><li>Drishya</li></a>
+      <a href="#"><li>Quizzotica</li></a>
+      <a href="#"><li>The Pixel Snappers</li></a>
+      <a href="#"><li>Renaissance</li></a>
+    </ul>
+
+
+  </div> -->
+
+  <div class="dropdown2">
+    <div class="toggle"></div>
+    <a class="active"><i class="flaticon-book"></i>&nbsp&nbspGOALS</a>
+    <a href="./das.html"><i class="flaticon-design"></i>&nbsp&nbspDigital Arts Society</a>
+    <!-- <a href="./fps.html"><i class="flaticon-drama"></i>&nbsp&nbspFilm Production Society</a> -->
+  </div>
+
+  <div id="clubs">
+    <div class="club-shown" id="Swara">
+      <div class="clubs-content">
+        <div class="cover-img" id="parallax" style="background-image: url('res/society/fps/fps-img.jpg');">
+          <h1 style="color: #fff; font-size: 110px; margin-top: 85px">FPS <br><span style= "font-size: 50px;"">Film Production Society</span> </h1>
+          <!-- <p>Let's get to know each other</p> -->
+        </div>
+
+
+
+        <section class="content">
+          <div class="intro">
+            <img  style="padding: 50px 50px 0px 50px;"  src="./res/society/fps/fps3.png" alt="GOALS-alt-to-be-put" class="club-img">
+            <p  style="margin-bottom: 20px" class="club-desc"><span style="font-weight: bold;font-size: 4rem;">FPS: Film Production Society<br><br></span>
+              Film Production Society, always buzzing, always on a project. From simple edits to flagship, professional productions with big teams. FPS brings together writers,
+              cinematographers, editors and directors to bring to life pieces of art, at 24 frames a second.
+              <strong><em><br>"We don’t make movies to make money, we make money to make more movies." - Walt Disney</em></strong><br><br><strong>Coordinator</strong><br />Sohail Faizan
+              <br /><br /><strong>Core Members</strong><br />Milind Kesar (Pre Production)<br />
+Ankit Masa(Production)<br />
+Irfan Ahamed(Post Production)
+             </p>
+          </div>
+          <div style="text-align: center; margin-top:120px;">
+            <h1 style="font-size: 70px; margin-top:30px; margin-bottom: 100px">FPS Presents </h1>
+          <iframe  style="margin-bottom: 100px;" width="1200" height="550" src="https://www.youtube.com/embed/NDvEBE5Kq74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Footer starts here-->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Culturals</h3>
+
+      <p class="footer-links">
+        <a href="./index.html">Home</a>
+        ·
+        <a href="javascript:open()">Clubs</a>
+        ·
+        <a href="javascript:open_societies()">Societies</a>
+        ·
+        <a href="./events.html">Events</a>
+        ·
+        <a href="./gallery.html">Gallery</a>
+        ·
+        <a href="./contact.html">Contact Us</a>
+      </p>
+
+      <p class="footer-company-name">Culturals, IIT Bhilai &copy; 2020</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <!-- <i class="fas fa-map-marker-alt"></i> -->
+        <p><span>IIT Bhilai, GEC Campus</span> Raipur, India</p>
+      </div>
+
+      <div>
+        <!-- <i class="fa fa-phone"></i> -->
+        <p><a href="tel:+917011456052">+91 7011456052</a></p>
+      </div>
+
+      <div>
+        <!-- <i class="fa fa-envelope"></i> -->
+        <p><a href="mailto:Gensec_Cultural_Gymkhana@iitbhilai.ac.in">Gensec_Cultural_Gymkhana@iitbhilai.ac.in</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <!-- <span>About us</span> -->
+        <br><br>Culture is the arts elevated to a set of beliefs, and we help you turn it into reality.
+        <span style="float: right;"><br><br>The Cultural Council</span>
+      </p>
+
+      <!-- <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div> -->
+
+    </div>
+
+  </footer>
+  <!--Footer ends here-->
+
+  <!--Top arrow starts here-->
+
+  <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <style>
+  .to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    text-decoration: none;
+    background: #0085c4;
+    color: #fff;
+    padding: 9px 12px;
+    border-radius: 50%;
+    z-index: 5 !important;
+    display: none;
+  }
+  .to-top:hover{
+    background: #000;
+    color:  #0085c4;
+
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      var duration = 100;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 200) {
+          jQuery('.to-top').fadeIn(duration);
+        } else {
+          jQuery('.to-top').fadeOut(duration);
+        }
+      });
+
+      jQuery('.to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
+  </script>
+
+  <!--Top arrow ends here-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+    <script type="text/javascript">
+      function open_societies() {
+        // console.log("modal opened");
+        var mod = document.getElementById('modal_societies');
+        console.log("modal_societies opened");
+        mod.style.visibility = 'visible';
+        $('.menu-toggle').toggleClass('active');
+        $('nav').toggleClass('active');
+      }
+    </script>
+
+    <script type="text/javascript">
+      function close_societies() {
+        console.log("modal_societies closed");
+        var mod = document.getElementById('modal_societies');
+        mod.style.visibility = 'hidden';
+      }
+    </script>
+  <!-- modal js ends -->
+
+  <!--Nav Bar JS code starts here-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu-toggle').click(function() {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+  <script type="text/javascript">
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 1;
+    // var sticky = 0;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <!--Nav Bar JS code ends here-->
+
+  <!-- <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+  </script> -->
+
+  <!--Dropdown JS Code-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.toggle').click(function() {
+        $('.toggle').toggleClass('active')
+        $('.dropdown2').toggleClass('active')
+      })
+    })
+  </script>
+
+
+
+
+</body>
+
+</html>
