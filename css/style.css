@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.overlay {
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.87);
+  text-align: center;
+  position: fixed;
+  top: 38%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  vertical-align: middle;
+
+}
+
+.color-overlay {
+  background-color: rgba(0, 0, 30, 0.5);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 5rem;
+}
+
+.overlay h3 {
+  font-family: 'Righteous', cursive;
+  font-size: 1.6rem;
+}
+
+.insti .iitbh {
+  font-family: 'Righteous', cursive;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0.7rem;
+  right: 1.3rem;
+  text-align: right;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.insti .iitbh:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.vid {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.vid video {
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.effect-shine {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,0.8) 30%, #000 50%, rgba(0,0,0,0.8) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 3s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+
+.grow {
+  transition: all 0.2s;
+}
+
+.grow:hover {
+  font-size: 110%;
+}
+
+.grow.active {
+  animation: font 1s infinite;
+}
+
+@keyframes font {
+  0% {
+    font-size: 100%
+  }
+  50% {
+    font-size: 110%;
+  }
+  100% {
+    font-size: 100%;
+  }
+}

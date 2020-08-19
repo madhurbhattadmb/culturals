@@ -1,0 +1,269 @@
+@import "navbarstyle.css";
+@import "sidebar.css";
+@import "footerstyle.css";
+/* @import "dropdown.css"; */
+@import "dropdown2.css";
+@import "modalstyle.css";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+a {
+  text-decoration: none !important;
+}
+
+.sticky {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0);
+}
+
+/* .modal-window {
+  margin-left: 75px;
+} */
+
+header a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+html {
+  font-size: 16px;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5b5b5b !important;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75); */
+  border-radius: 0 !important;
+  z-index: 2 !important;
+}
+
+.footer-distributed a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.sidebar a {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.sidebar i {
+  /* position: relative !important;
+  margin: 500px !important; */
+  /* visibility: hidden !important; */
+  margin-left: -22px;
+}
+
+.sidebar span {
+  text-decoration: none !important;
+  font-style: normal !important;
+  font-size: 18px !important;
+}
+
+.sidebar [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 30px;
+}
+
+.sidebar .active {
+  background-color: #005d96;
+}
+
+.cover-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  margin-left: 75px;
+  height: 100vh;
+  /* background-image: url("../res/clubs/swara/bg.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  transition: .15s ease-in-out;
+  transition-property: background-position;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -o-transition-property: background-position;
+  overflow-x: hidden;
+}
+
+.cover-img h1 {
+  position: relative;
+  color: #101823;
+  font-family: 'Arvo', serif;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.cover-img h1 span {
+  font-family: 'Stylish', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.clubs-content {
+  /* margin-left: 75px; */
+  overflow-x: hidden;
+}
+
+.content {
+  margin-left: 75px;
+  position: relative;
+  background-color: #fff;
+}
+
+.content .club-img {
+  width: 1200px;
+  height: 675px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
+
+  /* margin: 80px auto; */
+  margin-bottom: 80px;
+}
+
+.content .event-img {
+  width: 1080px;
+  height: 607.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
+
+  /* margin: 80px auto; */
+  margin-bottom: 80px;
+}
+
+.content .club-desc {
+  position: relative;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  font-family: 'Quicksand', serif;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  /* text-align: justify;
+  text-justify: inherit; */
+  /* width: 90ch; */
+  /* margin: 80px auto; */
+  margin-bottom: 120px;
+}
+
+.content .event-content .event-desc {
+  position: relative;
+  font-family: 'Quicksand', serif;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 120px;
+}
+
+
+
+.video-content .desc {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Quicksand', serif;
+  text-align: center;
+  font-size: 2.4rem;
+  /* margin: 80px auto; */
+  /* margin-bottom: 80px; */
+}
+
+.video-content .desc a {
+  font-style: italic !important;
+  text-decoration: none;
+  /* color: black !important; */
+}
+
+.video-content iframe {
+  width: 1080px;
+  height: 607.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin: 80px auto;
+}
+
+.dropdown2 {
+  visibility: hidden;
+}
+.footer-distributed{
+  margin-left: 75px;
+}
+
+@media(max-width: 1250px)  {
+  .content .club-img{
+    width: 90%;
+    height: auto;
+  }
+
+  .video-content iframe {
+    width: 90%;
+    /* height: 90%; */
+  }
+
+  .content .event-img{
+    width: 90%;
+    height: auto;
+  }
+
+  html {
+    font-size: 6px !important;
+  }
+
+
+
+}
+
+@media (max-width: 920px) {
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .dropdown2 {
+    visibility: visible;
+  }
+
+  .clubs-content {
+    margin-left: -75px;
+  }
+
+  .content {
+    /* margin-left: 0px; */
+  }
+  .footer-distributed{
+    margin-left: 0px;
+  }
+  .video-content iframe{
+    height: 400px;
+  }
+  .club-img {
+    margin-bottom: 10px;
+  }
+
+  .event-img {
+    margin-bottom: 10px;
+  }
+
+
+}

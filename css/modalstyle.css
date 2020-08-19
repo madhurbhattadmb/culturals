@@ -1,0 +1,207 @@
+@import "../res/clubs/font/flaticon2.css";
+@import "../res/society/font/flaticon.css";
+@media (max-width: 920px) {
+  .modal-window-div {
+    width: 72.5% !important;
+  }
+
+  .modal-window-div-2 {
+    width: 72.5% !important;
+  }
+}
+
+.modal-window {
+  visibility: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  /* opacity: 0; */
+  overflow: auto;
+  pointer-events: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  /* margin: auto; */
+}
+
+/* .modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+} */
+.modal-window-div {
+  width: 65%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* align-items: center; */
+  /* margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0; */
+  overflow-y: hidden;
+  overflow-x: auto;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  /* background: rgba(6, 30, 117, 0.8); */
+  background: #242526;
+  opacity: 0.95;
+  border-radius: 30px;
+  /*display: inline-block;*/
+}
+
+.modal-window-div-2 {
+  margin: auto;
+  width: 25%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* align-items: center; */
+  /* margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0; */
+  overflow-y: hidden;
+  overflow-x: auto;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+  padding-bottom: 30px;
+  /* background: rgba(6, 30, 117, 0.8); */
+  background: #242526;
+  opacity: 0.95;
+  border-radius: 30px;
+  /*display: inline-block;*/
+}
+
+.modal-div {
+  display: flex;
+  margin-top: -20px;
+  /* overflow-x: scroll; */
+}
+
+/*.menu-div {*/
+/*  width: 1200px;*/
+/*}*/
+.menu-modal {
+  margin: auto;
+  width: 850px;
+  height: auto;
+  display: flex;
+  padding: 0;
+  overflow-x: scroll;
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
+}
+
+.menu-modal-2 {
+  margin: auto;
+  width: 280px;
+  height: auto;
+  display: flex;
+  padding: 0;
+  overflow-x: scroll;
+  /* left: 50%; */
+  /* transform: translate(-50%, 0); */
+}
+
+.modal-element {
+  /*margin: 0.2em;*/
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  /* margin: auto; */
+  padding: 0;
+  display: block;
+  transition: all 0.3s;
+
+}
+
+.menu-modal::-webkit-scrollbar {
+  width: 0.1px !important;
+}
+
+.menu-modal::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+/* .menu-modal::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey !important;
+} */
+.modal-close {
+  line-height: 50px;
+  /*margin-bottom: 10px;*/
+  font-size: 80%;
+  position: fixed !important;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none !important;
+  /* overflow: hidden; */
+  color: white !important;
+}
+
+/* .modal-close-div {
+  width: 100%;
+  position: fixed;
+  overflow-x: hidden;
+} */
+/* .modal-close :hover {
+  color: #646567;
+} */
+
+
+
+
+
+/* .modal-element:hover {
+  width: 120px !important;
+  color: #21d1c8 !important;
+} */
+.modal-element [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 700%;
+  color: white;
+  transition: all 0.3s;
+  margin: auto;
+}
+
+.modal-element:hover [class^="flaticon-mic"]:before, [class*=" flaticon-mic"]:before, [class^="flaticon-mic"]:after, [class*=" flaticon-mic"]:after {
+  color: #e0263c;
+}
+
+.modal-element:hover [class^="flaticon-choreography"]:before, [class*=" flaticon-choreography"]:before, [class^="flaticon-choreography"]:after, [class*=" flaticon-choreography"]:after {
+  color: #69f8ff;
+}
+
+.modal-element:hover [class^="flaticon-drama"]:before, [class*=" flaticon-drama"]:before, [class^="flaticon-drama"]:after, [class*=" flaticon-drama"]:after {
+  color: #f5e731;
+}
+
+.modal-element:hover [class^="flaticon-question"]:before, [class*=" flaticon-question"]:before, [class^="flaticon-question"]:after, [class*=" flaticon-question"]:after {
+  color: #17e670;
+}
+
+.modal-element:hover [class^="flaticon-photograph"]:before, [class*=" flaticon-photograph"]:before, [class^="flaticon-photograph"]:after, [class*=" flaticon-photograph"]:after {
+  color: #06a199;
+}
+
+.modal-element:hover [class^="flaticon-paint"]:before, [class*=" flaticon-paint"]:before, [class^="flaticon-paint"]:after, [class*=" flaticon-paint"]:after {
+  color: #ff4765;
+}
+
+.modal-element:hover [class^="flaticon-book"]:before, [class*=" flaticon-book"]:before, [class^="flaticon-book"]:after, [class*=" flaticon-book"]:after {
+  color: #e0263c;
+}
+
+.modal-element:hover [class^="flaticon-design"]:before, [class*=" flaticon-design"]:before, [class^="flaticon-design"]:after, [class*=" flaticon-design"]:after {
+  color: #69f8ff;
+}
+
+.align-middle {
+  font-size: 1.65rem;
+  color: white;
+}

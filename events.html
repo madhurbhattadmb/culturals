@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Events</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+  <style>
+    body{
+      /* background-image: url('res/events/bg2.jpg'); */
+    }
+  </style>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" media="screen" href="css/eventstyle.css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet ' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+<body>
+  <div id="preload">
+    <img src="res/events/bg2.jpg" />
+  </div>
+
+  <!-- <script>
+    jQuery(function($) {
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+
+      $(window).resize(function() {
+        if (windowWidth != $(window).width() || windowHeight != $(window).height()) {
+          location.reload();
+          return;
+        }
+      });
+    });
+  </script> -->
+  <!--Navigation Bar starts here-->
+  <header id="navbar">
+    <a href="#" class="cult-logo">Culturals</a>
+    <div class="menu-toggle"></div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="javascript:open()">CLUBS</a></li>
+        <li><a href="javascript:open_societies()">SOCIETIES</a></li>
+        <li><a href="./events.html" class="active">EVENTS</a></li>
+        <li><a href="./gallery.html">GALLERY</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
+  </header>
+
+  <!--Nav Bar ends here-->
+
+  <!--Modal  -->
+  <div id="modal" class="modal-window">
+    <div class="container-fluid modal-window-div">
+      <a href="javascript:close()" title="Close" class="modal-close">Close &times;</a>
+      <div class="modal-div">
+        <ul class="menu-modal">
+
+          <li class="modal-element">
+            <a href="./swara.html"><i class="flaticon-mic">
+                <div class="align-middle">Swara</div>
+              </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./beathackers.html"><i class="flaticon-choreography">
+                <div class="align-middle">Beathackers</div>
+              </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./drishya.html"><i class="flaticon-drama">
+                <div class="align-middle">Drishya</div>
+              </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./quizzotica.html"><i class="flaticon-question">
+                <div class="align-middle">Quizzotica</div>
+              </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./tps.html"><i class="flaticon-photograph">
+                <div class="align-middle">TPS</div>
+              </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./designx.html"><i class="flaticon-design">
+                <div class="align-middle">DesignX</div>
+              </i></a>
+          </li>
+
+          <li class="modal-element">
+            <a href="./renaissance.html"><i class="flaticon-paint">
+                <div class="align-middle">Renaissance</div>
+              </i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal Societies -->
+  <div id="modal_societies" class="modal-window">
+    <div class="container-fluid modal-window-div-2">
+      <a href="javascript:close_societies()" title="Close" class="modal-close">Close &times;</a>
+      <div class="modal-div">
+        <ul class="menu-modal-2">
+
+          <li class="modal-element">
+            <a href="./goals.html"><i class="flaticon-book">
+              <div class="align-middle">GOALS</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+          <li class="modal-element">
+            <a href="./fps.html"><i class="flaticon-photograph">
+              <div class="align-middle">FPS</div>
+            </i></a>
+          </li> <!-- /.list-group-item -->
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!-- Past events starts here -->
+  <section class="past-events">
+    <h1 class="event-header">Past Events</h1>
+  </section>
+  <div class="timeline swiper-container">
+    <div class="swiper-wrapper">
+      <div class="box js--fadeInLeft box-left swiper-slide">
+        <div class="box-content rm">
+          <div class="imgBx">
+            <img src="res/events/cult_nite.jpg" alt="CULT NITE">
+          </div>
+          <div class="content">
+            <h3>Cult Nite 2k19</h3>
+            <p>The Annual Mega Cultural Event. One night in the name of music,
+              dance and drama - a night of Euphoria. The best performances
+              from Swara, BeatHackers and Drishya are showcased that night.
+              Everyone waits for this night, and no one wants it to end.</p>
+          </div>
+        </div>
+      </div>
+      <div class="box js--fadeInRight box-right swiper-slide">
+        <div class="box-content  rm">
+          <div class="imgBx">
+            <img src="res/events/reverb.jpg" alt="REVERB">
+          </div>
+          <div class="content">
+            <h3>Reverb'18</h3>
+            <p>Annual open mic musical night organised by Swara.
+              The only single event where you get to see some chhupe
+              rustoms turn up on stage and set it on fire with their
+              vocals or instrumental skills. A night with no bounds
+              to music, a night to remember forever.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box js--fadeInLeft box-left swiper-slide">
+        <div class="box-content rm">
+          <div class="imgBx">
+            <img src="res/events/xpressions.jpg" alt="XPRESSIONS">
+          </div>
+          <div class="content">
+            <h3>Xpressions'18</h3>
+            <p>In this wonderful event, every student of IIT Bhilai gets a chance to show what dancing
+              skills they have. With no bounds to dance genres, the stage is always on fire on
+              the Xprssions Night</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box js--fadeInRight box-right swiper-slide">
+        <div class="box-content rm">
+          <div class="imgBx">
+            <img src="res/events/theatre_nite.jpg" alt="DRAMA NITE">
+          </div>
+          <div class="content">
+            <h3>Theatre Nite'18</h3>
+            <p>An annual event exclusive to the Drishya, where each member puts
+              in all their effort into a single play. With the help of mentors,
+              they encapsulate all their work into performance which is not merely an
+              act but a heartfelt connection with its audience. The drama night
+              has all the glamor an actor awaits, totally worth the time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box js--fadeInLeft box-left swiper-slide">
+        <div class="box-content rm">
+          <div class="imgBx">
+            <img src="res/events/tps.jpg" alt="TPS">
+          </div>
+          <div class="content">
+            <h3>TPS Events</h3>
+            <p>The Pixel Snappers has been organising photography competitions
+              of which some are year long and some are monthly. Competitors are
+              given a theme and photos are to be clicked based on the theme.
+              They are given a Nikon DSLR to click the photos.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box js--fadeInRight box-right swiper-slide">
+        <div class="box-content rm">
+          <div class="imgBx">
+            <img src="res/events/mun.jpg" alt="MUN">
+          </div>
+          <div class="content">
+            <h3>Model United Nations</h3>
+            <p>An extracurricular activity that made the students learn about
+              international relations, diplomacy and the United Nations. This was
+              meant to engage the participating teams to develop
+              deeper understanding into the current world issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Past events ends here -->
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- <script>
+    window.onresize = function(event) {
+      document.location.reload(true);
+    }
+  </script> -->
+  <!-- Initialize Swiper -->
+  <!-- <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      autoplay: {
+       delay: 2000,
+       disableOnInteraction: false,
+     },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script> -->
+
+  <!-- Events js script link start here-->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+  <script src="js/events.js"></script>
+
+  <!-- Events js script link ends here-->
+  <!-- Upcoming events starts here -->
+  <section class="upcoming-event">
+    <h1 class="event-header">Upcoming Event</h1>
+    <h1 class="event-desc">See what's waiting for you</h1>
+    <img src="./res/upcoming/goals.png" style="max-width: 607.5px; max-height: 1080px;">
+    <!-- <p><a href="./events.html">See more events...</a></p> -->
+  </section>
+  <!-- Upcoming events ends here -->
+
+
+
+
+  <!--Footer starts here-->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Culturals</h3>
+
+      <p class="footer-links">
+        <a href="./index.html">Home</a>
+        ·
+        <a href="javascript:open()">Clubs</a>
+        ·
+        <a href="javascript:open_societies()">Societies</a>
+        ·
+        <a href="./events.html">Events</a>
+        ·
+        <a href="./gallery.html">Gallery</a>
+        ·
+        <a href="./contact.html">Contact Us</a>
+      </p>
+
+      <p class="footer-company-name">Culturals, IIT Bhilai &copy; 2020</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <!-- <i class="fas fa-map-marker-alt"></i> -->
+        <p><span>IIT Bhilai, GEC Campus</span> Raipur, India</p>
+      </div>
+
+      <div>
+        <!-- <i class="fa fa-phone"></i> -->
+        <p><a href="tel:+917011456052">+91 7011456052</a></p>
+      </div>
+
+      <div>
+        <!-- <i class="fa fa-envelope"></i> -->
+        <p><a href="mailto:Gensec_Cultural_Gymkhana@iitbhilai.ac.in">Gensec_Cultural_Gymkhana@iitbhilai.ac.in</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <!-- <span>About us</span> -->
+        <br><br>Culture is the arts elevated to a set of beliefs, and we help you turn it into reality.
+        <span style="float: right;"><br><br>The Cultural Council</span>
+      </p>
+
+      <!-- <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div> -->
+
+    </div>
+
+  </footer>
+  <!--Footer ends here-->
+
+  <!--Top arrow starts here-->
+
+  <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <style>
+    .to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 25px;
+      text-decoration: none;
+      background: #0085c4;
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 50%;
+      z-index: 5 !important;
+      display: none;
+    }
+
+    .to-top:hover {
+      background: #000;
+      color: #0085c4;
+
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      var duration = 100;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 200) {
+          jQuery('.to-top').fadeIn(duration);
+        } else {
+          jQuery('.to-top').fadeOut(duration);
+        }
+      });
+
+      jQuery('.to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html').animate({
+          scrollTop: 0
+        }, duration);
+        return false;
+      })
+    });
+  </script>
+
+  <!--Top arrow ends here-->
+
+  <!--Nav Bar JS code starts here-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <!-- modal js begins -->
+
+  <script type="text/javascript">
+    function open() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal');
+      console.log("modal opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close() {
+      console.log("modal closed");
+      var mod = document.getElementById('modal');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+
+  <script type="text/javascript">
+    function open_societies() {
+      // console.log("modal opened");
+      var mod = document.getElementById('modal_societies');
+      console.log("modal_societies opened");
+      mod.style.visibility = 'visible';
+      $('.menu-toggle').toggleClass('active');
+      $('nav').toggleClass('active');
+    }
+  </script>
+
+  <script type="text/javascript">
+    function close_societies() {
+      console.log("modal_societies closed");
+      var mod = document.getElementById('modal_societies');
+      mod.style.visibility = 'hidden';
+    }
+  </script>
+  <!-- modal js ends -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.menu-toggle').click(function() {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+
+  <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop + 1;
+
+    // Add the sticky class to the navbar when you reach its scroll position.
+    //Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <!--Nav Bar JS code ends here-->
+
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+    <link rel="stylesheet" href="./css/clubstyle2.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Stylish"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet "
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./res/clubs/font/flaticon.css"
+    />
+    <title>Culturals, IIT Bhilai</title>
+  </head>
+
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--Navigation Bar starts here-->
+    <header id="navbar" class="unhide">
+      <a href="#" class="cult-logo">Culturals</a>
+      <div class="menu-toggle"></div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./swara.html" class="active">CLUBS</a></li>
+          <li><a href="javascript:open_societies()">SOCIETIES</a></li>
+          <li><a href="./events.html">EVENTS</a></li>
+          <li><a href="./gallery.html">GALLERY</a></li>
+          <li><a href="./contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <div data-component="sidebar">
+      <div class="sidebar">
+        <ul class="list-group flex-column d-inline-block first-menu">
+          <li class="list-group-item pl-3 py-2 active">
+            <a href="./swara.html"
+              ><i class="flaticon-mic"
+                ><span class="ml-2 align-middle">Swara</span></i
+              ></a
+            >
+          </li>
+          <!-- /.list-group-item -->
+
+          <li class="list-group-item pl-3 py-2">
+            <a href="./beathackers.html"
+              ><i class="flaticon-choreography"
+                ><span class="ml-2 align-middle">Beathackers</span></i
+              ></a
+            >
+          </li>
+          <!-- /.list-group-item -->
+
+          <li class="list-group-item pl-3 py-2">
+            <a href="./drishya.html">
+              <i class="flaticon-drama"
+                ><span class="ml-2 align-middle">Drishya</span></i
+              >
+            </a>
+          </li>
+          <!-- /.list-group-item -->
+
+          <li class="list-group-item pl-3 py-2">
+            <a href="./quizzotica.html"
+              ><i class="flaticon-question"
+                ><span class="ml-2 align-middle">Quizzotica</span></i
+              ></a
+            >
+          </li>
+
+          <li class="list-group-item pl-3 py-2">
+            <a href="./tps.html"
+              ><i class="flaticon-photograph"
+                ><span class="ml-2 align-middle">The Pixel Snappers</span></i
+              ></a
+            >
+          </li>
+
+          <li class="list-group-item pl-3 py-2">
+            <a href="./renaissance.html"
+              ><i class="flaticon-paint"
+                ><span class="ml-2 align-middle">Renaissance</span></i
+              ></a
+            >
+          </li>
+
+          <li class="list-group-item pl-3 py-2">
+            <a href="./designx.html"
+              ><i class="flaticon-design" aria-hidden="true"
+                ><span class="ml-2 align-middle">DesignX</span></i
+              ></a
+            >
+          </li>
+        </ul>
+        <!-- /.first-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </div>
+
+    <!--Modal Societies -->
+    <div id="modal_societies" class="modal-window">
+      <div class="container-fluid modal-window-div-2">
+        <a href="javascript:close_societies()" title="Close" class="modal-close"
+          >Close &times;</a
+        >
+        <div class="modal-div">
+          <ul class="menu-modal-2">
+            <li class="modal-element">
+              <a href="./goals.html"
+                ><i class="flaticon-book">
+                  <div class="align-middle">GOALS</div>
+                </i></a
+              >
+            </li>
+            <!-- /.list-group-item -->
+
+            <li class="modal-element">
+              <a href="./fps.html"
+                ><i class="flaticon-photograph">
+                  <div class="align-middle">FPS</div>
+                </i></a
+              >
+            </li>
+            <!-- /.list-group-item -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!--Dropdown club selector for mobile-->
+    <!-- <div class="dropdown">
+    Swara
+    <ul>
+      <a href="#"><li class="active">Swara</li></a>
+      <a href="#"><li>Beathackers</li></a>
+      <a href="#"><li>Drishya</li></a>
+      <a href="#"><li>Quizzotica</li></a>
+      <a href="#"><li>The Pixel Snappers</li></a>
+      <a href="#"><li>Renaissance</li></a>
+    </ul>
+
+
+  </div> -->
+
+    <div class="dropdown2">
+      <div class="toggle"></div>
+      <a class="active"><i class="flaticon-mic"></i>&nbsp&nbspSwara</a>
+      <a href="./beathackers.html"
+        ><i class="flaticon-choreography"></i>&nbsp&nbspBeathackers</a
+      >
+      <a href="./drishya.html"
+        ><i class="flaticon-drama"></i>&nbsp&nbspDrishya</a
+      >
+      <a href="./quizzotica.html"
+        ><i class="flaticon-question"></i>&nbsp&nbspQuizzotica</a
+      >
+      <a href="./tps.html"
+        ><i class="flaticon-photograph"></i>&nbsp&nbspThe Pixel Snappers</a
+      >
+      <a href="./renaissance.html"
+        ><i class="flaticon-paint"></i>&nbsp&nbspRenaissance</a
+      >
+    </div>
+
+    <div id="clubs">
+      <div class="club-shown" id="Swara">
+        <div class="clubs-content">
+          <div
+            class="cover-img"
+            id="parallax"
+            style="background-image: url('res/clubs/swara/bg.jpg');"
+          >
+            <h1>Swara<br /><span>The Music Club</span></h1>
+            <!-- <p>Let's get to know each other</p> -->
+          </div>
+
+          <section class="content">
+            <div class="intro">
+              <img
+                src="./res/clubs/swara/club-img.jpg"
+                alt="Swara performing on stage"
+                class="club-img"
+              />
+              <p class="club-desc">
+                <span style="font-weight: bold; font-size: 4rem;"
+                  >Swara : The Music Club<br /><br
+                /></span>
+                Music is a lot like literature. It's pleasing, enlightening and
+                even life-changing. Music is also for the passionate, the
+                head-banger, the lonely soul in this crowded yet oblivion world.
+                Quoting Beethoven -
+                <strong
+                  ><em
+                    ><br />"Music is...A higher revelation than all wisdom and
+                    philosophy"</em
+                  ></strong
+                ><br /><br />
+                Welcome to Swara. We are the few weirdos, making music for
+                everyone. Join us, it is awesome in here. Swara gives you a
+                platform to show everyone the musician within you. Intra club
+                jamming sessions and yearly events shape you up and then you are
+                ready to rule the stage in college fests and Inter IIT Cultural
+                Meet.<br /><br /><strong>Coordinator</strong><br />Jainam
+                Khatri<br /><br /><strong>Band Lead</strong><br />Debajyoti
+                Halder<br /><br />
+                <strong>Core Members</strong><br />Ashutosh Soni<br />Saksham
+                Bhushan<br />Jyotika Mahapatra<br />Vanshika Sahgal<br />Puja
+                Bansal
+              </p>
+            </div>
+
+            <div class="event-content">
+              <img
+                src="./res/clubs/swara/event-img.jpg"
+                alt="Swara performing on stage"
+                class="event-img"
+              />
+              <p class="event-desc">
+                <span style="font-weight: bold; font-size: 4rem;"
+                  >Reverb : Annual Musical Event<br /><br
+                /></span>
+                Annual open mic musical night organised by Swara. The only
+                single event where you get to see some
+                <em>chhupe rustoms</em> turn up on stage and set it on fire with
+                their vocals or instrumental skills. A night with no bounds to
+                music, a night to remember forever.
+              </p>
+            </div>
+
+            <div class="video-content">
+              <p class="desc">
+                <span style="font-weight: bold; font-size: 4rem;"
+                  >Swara : On stage<br
+                /></span>
+                Watch our stage performances
+                <a
+                  href="https://www.youtube.com/channel/UCs_b3N6z8XZSCY4KUrcQnsQ"
+                  target="_blank"
+                  >here</a
+                >
+              </p>
+              <iframe
+                src="https://www.youtube.com/embed/bW5sqyFIxT4"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer starts here-->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Culturals</h3>
+
+        <p class="footer-links">
+          <a href="./index.html">Home</a>
+          ·
+          <a href="javascript:open()">Clubs</a>
+          ·
+          <a href="javascript:open_societies()">Societies</a>
+          ·
+          <a href="./events.html">Events</a>
+          ·
+          <a href="./gallery.html">Gallery</a>
+          ·
+          <a href="./contact.html">Contact Us</a>
+        </p>
+
+        <p class="footer-company-name">Culturals, IIT Bhilai &copy; 2020</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <!-- <i class="fas fa-map-marker-alt"></i> -->
+          <p><span>IIT Bhilai, GEC Campus</span> Raipur, India</p>
+        </div>
+
+        <div>
+          <!-- <i class="fa fa-phone"></i> -->
+          <p><a href="tel:+917011456052">+91 7011456052</a></p>
+        </div>
+
+        <div>
+          <!-- <i class="fa fa-envelope"></i> -->
+          <p>
+            <a href="mailto:Gensec_Cultural_Gymkhana@iitbhilai.ac.in"
+              >Gensec_Cultural_Gymkhana@iitbhilai.ac.in</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <!-- <span>About us</span> -->
+          <br /><br />Culture is the arts elevated to a set of beliefs, and we
+          help you turn it into reality.
+          <span style="float: right;"><br /><br />The Cultural Council</span>
+        </p>
+
+        <!-- <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div> -->
+      </div>
+    </footer>
+    <!--Footer ends here-->
+
+    <!--Top arrow starts here-->
+
+    <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <style>
+      .to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        text-decoration: none;
+        background: #0085c4;
+        color: #fff;
+        padding: 9px 12px;
+        border-radius: 50%;
+        z-index: 5 !important;
+        display: none;
+      }
+      .to-top:hover {
+        background: #000;
+        color: #0085c4;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        var duration = 100;
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 200) {
+            jQuery(".to-top").fadeIn(duration);
+          } else {
+            jQuery(".to-top").fadeOut(duration);
+          }
+        });
+
+        jQuery(".to-top").click(function (event) {
+          event.preventDefault();
+          jQuery("html").animate({ scrollTop: 0 }, duration);
+          return false;
+        });
+      });
+    </script>
+
+    <!--Top arrow ends here-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- modal js begins -->
+
+    <script type="text/javascript">
+      function open() {
+        // console.log("modal opened");
+        var mod = document.getElementById("modal");
+        console.log("modal opened");
+        mod.style.visibility = "visible";
+        $(".menu-toggle").toggleClass("active");
+        $("nav").toggleClass("active");
+      }
+    </script>
+
+    <script type="text/javascript">
+      function close() {
+        console.log("modal closed");
+        var mod = document.getElementById("modal");
+        mod.style.visibility = "hidden";
+      }
+    </script>
+
+    <script type="text/javascript">
+      function open_societies() {
+        // console.log("modal opened");
+        var mod = document.getElementById("modal_societies");
+        console.log("modal_societies opened");
+        mod.style.visibility = "visible";
+        $(".menu-toggle").toggleClass("active");
+        $("nav").toggleClass("active");
+      }
+    </script>
+
+    <script type="text/javascript">
+      function close_societies() {
+        console.log("modal_societies closed");
+        var mod = document.getElementById("modal_societies");
+        mod.style.visibility = "hidden";
+      }
+    </script>
+
+    <!-- modal js ends -->
+
+    <!--Nav Bar JS code starts here-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-toggle").click(function () {
+          $(".menu-toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop + 1;
+      // var sticky = 0;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+    <!--Nav Bar JS code ends here-->
+
+    <!-- <script type="text/javascript">
+    $(window).scroll(function() {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+    });
+  </script> -->
+
+    <!--Dropdown JS Code-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $(".dropdown2").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

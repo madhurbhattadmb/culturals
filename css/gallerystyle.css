@@ -1,0 +1,192 @@
+@import "modalstyle.css";
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
+
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+html {
+  /* font-size: 16px; */
+}
+
+body::before {
+  background-image: url('../res/gallery/bg.jpg') !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: none;
+  position: fixed;
+  content: "";
+  display: block;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* background-image: url("../res/gallery/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; */
+}
+
+/* body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(250, 250, 250, 0.5);
+} */
+
+/* body, html {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0) !important; */
+  z-index: 2 !important;
+}
+
+/* Nav Bar */
+.cover-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("../res/gallery/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  transition: .15s ease-in-out;
+  transition-property: background-position;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -o-transition-property: background-position; */
+}
+
+.cover-img h1 {
+  position: relative;
+  color: #fff;
+  font-family: 'Leckerli One', cursive;
+  font-size: 78px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cover-img h1 span {
+  font-family: 'Leckerli One', cursive;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.cover-img p {
+  position: relative;
+  font-family: 'Stylish', sans-serif;
+}
+
+.full-screen-portfolio .container-fluid,
+.full-screen-portfolio .col-md-4, .col-md-8 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio-item .thumb {
+  position: relative;
+}
+
+.portfolio-item .hover-effect .hover-content {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.full-screen-portfolio .portfolio-item h1 {
+  position: relative;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 15px;
+  transform: translateY(25px);
+  transition: .5s ease-in-out;
+  letter-spacing: 0.5px;
+}
+
+.full-screen-portfolio .portfolio-item em {
+  font-style: normal;
+  font-weight: 200;
+}
+
+.full-screen-portfolio .portfolio-item:hover h1 {
+  transform: translateY(0);
+}
+
+.full-screen-portfolio .portfolio-item p {
+  padding-left: 20px;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .5s ease-in-out;
+  text-transform: uppercase;
+}
+
+.full-screen-portfolio .portfolio-item {
+  text-align: center;
+  line-height: 150%;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.full-screen-portfolio .portfolio-item:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 920px) {
+  .cover-img h1 {
+    font-size: 48px;
+  }
+
+  .cover-img h1 span {
+    font-size: 16px;
+  }
+}

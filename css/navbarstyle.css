@@ -1,0 +1,121 @@
+header {
+  font-family: "Helvetica";
+  position: relative;
+  margin: 0px auto;
+  padding: 0px;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 0px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.cult-logo {
+  color: #fff !important;
+  font-family: "Permanent Marker", cursive;
+  height: 56px;
+  padding-top: 18px;
+  font-size: 36px;
+  line-height: 40px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cult-logo:hover {
+  color: #ccc !important;
+}
+
+nav {
+  margin: 15px auto;
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav ul {
+  font-weight: bold;
+  display: flex;
+  padding-right: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  margin: 3px 4px;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+nav ul li a.active {
+  background: #fff;
+  color: #000 !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 2px #fff;
+  transition: 0.5s;
+}
+
+nav ul li a:hover {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 2px #fff;
+  transition: 0.5s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media (max-width: 920px) {
+  .menu-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+  }
+  .menu-toggle:before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  .menu-toggle.active:before {
+    content: '\f00d';
+    font-family: fontAwesome;
+    line-height: 40px;
+  }
+  nav {
+    display: none !important;
+  }
+  nav.active {
+    display: block !important;
+    width: 100%;
+  }
+  nav.active ul {
+    display: block;
+  }
+  nav.active ul li{
+    margin: 10px;
+    text-align: center;
+  }
+}

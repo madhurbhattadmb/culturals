@@ -1,0 +1,104 @@
+@import "navbarstyle.css";
+@import "footerstyle.css";
+@import "formstyle.css";
+@import "modalstyle.css";
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0);
+  z-index: 2 !important;
+}
+
+body::before {
+  background-image: url('../res/contact/1.jpg') !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: none;
+  position: fixed;
+  content: "";
+  display: block;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+}
+
+body {
+  /* background-image: url("../res/contact/1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; */
+  overflow-x: hidden;
+}
+.cover-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("../res/contact/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  transition: .15s ease-in-out;
+  transition-property: background-position;
+  -webkit-transition: .15s ease-in-out;
+  -moz-transition: .15s ease-in-out;
+  -o-transition: .15s ease-in-out;
+  -webkit-transition-property: background-position;
+  -moz-transition-property: background-position;
+  -o-transition-property: background-position; */
+}
+
+.cover-img h1 {
+  position: relative;
+  color: #101823;
+  font-family: 'Chewy', cursive;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.cover-img h1 span {
+  font-family: 'Stylish', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cover-img p {
+  position: relative;
+  font-family: 'Stylish', sans-serif;
+}
+
+.content {
+  background-color: #fff;
+  padding-top: 4rem;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
